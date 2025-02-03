@@ -70,3 +70,73 @@
     //AND operator looks for first falsey value
     //NOT operator
     result = !value;
+
+//====NULLISH COALESCING OPERATORS====
+    //Nullish Coalescing operator treats null and undefined similarily. It returns the first argument if it's not null/undefined. Otherwise it's the second one
+    //Nullish is a recent addition
+    //?? returns first defined value
+    let user;
+    alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+    //OR Operator can be used in the same way as ??
+
+//====LOOPS====
+    //do while loop
+    do {
+        alert("hello world KABOOM");
+    } while (x = 1);
+
+    //We can force exit loops by using "break" keyword
+    //"Continue" stops the current iter of loop and start new one
+    for (let i = 0; i < 10; i++) {
+        // if true, skip the remaining part of the body
+        if (i % 2 == 0) {
+            continue;
+        }
+        alert(i); // 1, then 3, 5, 7, 9
+      }
+
+//====SWITCH STATEMENT====
+    //Switch can replace multiple if checks
+    a = 2 + 2;
+    switch (a) {
+        case 3:
+            alert( 'Too small' );
+            break;
+        case 4:
+            alert( 'Exactly!' );
+            break;
+        case 5:
+            alert( 'Too big' );
+            break;
+        default:
+            alert( "I don't know such values" );
+    }
+
+    //if two cases are same, you can put them next to each other
+    /*case 2:
+      case 3:
+        alert("2 and 3 work!")
+    */
+
+//====FUNCTIONS====
+    function showMessage() {
+        alert( 'Hello everyone!' );
+    }
+    showMessage();
+    
+    //We can put a default value is a parameter isn't passed
+    function showMessage(from, text = "no text given") {
+        alert( from + ": " + text );
+      }
+      
+    showMessage("Ann"); // Ann: no text given
+
+//====FUNCTION EXPRESSIONS====
+    //JS has a Function Expression as well
+    let sayHi = function() {
+        alert( "Hello" );
+      };
+    
+      let func = sayHi;    //copy
+      func(); // Hello     //run the copy (it works)!
+      sayHi(); // Hello    //this still works too (why wouldn't it)
