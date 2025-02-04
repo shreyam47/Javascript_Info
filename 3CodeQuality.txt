@@ -1,0 +1,19 @@
+====DEBUGGING IN BROWSER====
+
+1) Sources Panel
+    - turn on developer tools in chrome
+    - select "sources" panel
+    - select JS file
+    - edit JS file
+
+2) Breakpoint
+    - debugger will automatically pause
+    - can type "debugger;" in JS file
+
+3) Console.log
+
+===AUTOMATED TESTING====
+
+Like JUnit testing
+
+Behavior Driven Development (BDD) is tests, documentation, and examples

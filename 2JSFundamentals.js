@@ -140,3 +140,53 @@
       let func = sayHi;    //copy
       func(); // Hello     //run the copy (it works)!
       sayHi(); // Hello    //this still works too (why wouldn't it)
+
+//====ARROW FUNCTIONS====
+    //Arrows are another syntax of creating functions
+    //
+    //let func = function(arg1, arg2, ..., argN) {
+    //     return expression;
+    //   };
+    //
+    //-TURNS INTO-
+    //
+    //let func = (arg1, arg2,..., argN) => expression
+    //*arg can be empty
+
+    let sum = (a, b) => a + b;
+    /* This arrow function is a shorter form of:
+
+    let sum = function(a, b) {
+    return a + b;
+    };
+    */
+    alert(sum(1, 2)); // 3
+
+    //Multiline arrow function
+    sum = (a, b) => { 
+        let result = a + b;
+        return result; // if we use curly braces, then we need an explicit "return"
+      };
+      
+      alert(sum(1, 2)); // 3
+
+//====JAVASCRIPT OVERVIEW====
+    /*
+    variables
+        - let
+        - const
+        - var
+    data types
+      - number
+      - bigint
+      - string
+      - boolean
+      - null
+      - undefined
+      - object & symbol
+    
+    interaction
+      - prompt(question, [default])
+      - confirm(question)
+      - alert(message)
+    */
